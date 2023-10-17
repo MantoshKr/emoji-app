@@ -15,8 +15,37 @@ const emojiDictionary = {
   "😔": "sad",
   "🥡": "takeout box",
   "❤️": "love",
-  "😑":
-    "annoyance" /** add some more to show how the app now expands when there's new data */
+  "😑": "annoyance",
+  "😃": "Smile",
+  "😁": "Grin",
+  "😆": "Laughing",
+  "😅": "Sweating Smile",
+  "😂": "Tears of Joy",
+  "😮": "Surprised",
+  "😥": "Sad but Relieved",
+  "😑": "Expressionless",
+  "😋": "Savoring Food",
+  "😐": "Neutral",
+  "😷": "Face with Medical Mask",
+  "🙄": "Face with Rolling Eyes",
+  "😴": "Sleepy",
+  "😙": "Kissing with Smiling Eyes",
+  "😍": "Heart Eyes",
+  "🤩": "Star-Struck",
+  "🥰": "Heart with Arrow",
+  "🤯": "Mind Blown",
+  "😛": "Stuck-Out Tongue",
+  "🤪": "Zany Face",
+  "😨": "Fearful",
+  "😰": "Anxious",
+  "😒": "Unamused",
+  "😓": "Cold Sweat",
+  "🥺": "Pleading Face",
+  "😫": "Tired Face",
+  "😵": "Dizzy Face",
+  "😤": "Angry",
+  "😪": "Sleepy Face",
+  "😖": "Confounded Face",
 };
 
 /**
@@ -48,14 +77,18 @@ export default function App() {
     /** concept 3 is onchange */
     <div className="App">
       <h1>Emojipedia</h1>
-<p> you can either search your an emoji or click on the emojis below to find its name</p>
+      <p>
+        {" "}
+        you can either search an emoji or click on the emojis below to find
+        its name
+      </p>
       <input
         onChange={changeHandler}
         value={emoji}
         placeholder={"Search your emoji"}
         style={{
           padding: "1em",
-          minWidth: "80%"
+          minWidth: "80%",
         }}
       />
       <h2> {emoji} </h2> {/** Concept 1: JSX */}
