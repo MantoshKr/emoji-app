@@ -23,7 +23,6 @@ const emojiDictionary = {
   "😂": "Tears of Joy",
   "😮": "Surprised",
   "😥": "Sad but Relieved",
-  "😑": "Expressionless",
   "😋": "Savoring Food",
   "😐": "Neutral",
   "😷": "Face with Medical Mask",
@@ -79,8 +78,8 @@ export default function App() {
       <h1>Emojipedia</h1>
       <p>
         {" "}
-        you can either search an emoji or click on the emojis below to find
-        its name
+        you can either search an emoji or click on the emojis below to find its
+        name
       </p>
       <input
         onChange={changeHandler}
@@ -93,6 +92,7 @@ export default function App() {
       />
       <h2> {emoji} </h2> {/** Concept 1: JSX */}
       <h3> {meaning} </h3> {/** how much part is re-rendered. */}
+      <div style={{marginRight:"10rem" , marginLeft:"10rem"}}>
       {
         /** Bonus feature; if time permmits */
         /**
@@ -109,6 +109,7 @@ export default function App() {
           </span>
         ))
       }
+      </div>
     </div>
   );
 }
