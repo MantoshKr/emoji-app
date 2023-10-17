@@ -47,7 +47,8 @@ export default function App() {
   return (
     /** concept 3 is onchange */
     <div className="App">
-      <h1>inside outttttt</h1>
+      <h1>Emojipedia</h1>
+<p> you can either search your an emoji or click on the emojis below to find its name</p>
       <input
         onChange={changeHandler}
         value={emoji}
